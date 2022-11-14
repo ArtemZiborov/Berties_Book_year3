@@ -1,0 +1,16 @@
+<h2>Users</h2>
+
+<div>
+ <% for(var i = 0; i < users.length; i++) { %>
+   <p>ID: <%= users[i].id %></p>
+   <p>Firstname: <%= users[i].first_name %> </p>
+   <p>Lastname: <%= users[i].last_name %> </p>
+   <p>Email: <%= users[i].email %> </p>    
+    <p>Username: <%= users[i].username %> </p>
+    
+ <% } %>   
+</div>
+
+<form>
+ <input type="button" value="Go back!" onclick="history.back()">
+</form>

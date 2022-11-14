@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Add new user to <%=shopName%></title>
+    <link rel="stylesheet"  type="text/css" href="main.css" />
+  </head>
+  <body>
+    <h1><%=shopName%>: Add user</h1>
+    <form method="POST" action="/useradded">
+        <p>User name: <input id="username" type="text" name="username" value="" /></p>
+        <p>Password: <input id="password" type="text" name="password" value="" /></p>
+        <input type="submit" value="Add user" />
+        <input type="button" value="Go back!" onclick="history.back()">
+      </form>
+  </body>
+</html>
